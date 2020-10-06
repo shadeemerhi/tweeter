@@ -17,8 +17,6 @@ $(document).ready(function() {
 
     // Updating the innterHTML of the counter to display to the user
     counterElement[0].innerHTML = charCount.toString();
-
-
   });
 });
 

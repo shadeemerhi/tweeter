@@ -1,0 +1,85 @@
+.tweet-feed {
+  margin-top: 2rem;
+}
+
+.tweet-feed article {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  height: 14rem;
+  border: 4px solid #545149;
+}
+
+.tweet-feed article:hover {
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(64, 86, 161, 0.40);
+  -moz-box-shadow: 8px 8px 0px 0px rgba(64, 86, 161, 0.40);
+  box-shadow: 8px 8px 0px 0px rgba(64, 86, 161, 0.40);
+  font-weight: 600;
+}
+
+.tweet-content {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 14pt;
+  height: 45%;
+}
+
+.img-name {
+  display: flex;
+  align-items: center;
+}
+
+.handle {
+  color: rgba(64, 86, 161, 0.40);
+}
+
+.profile-pic {
+  height: 50%;
+  width: auto;
+}
+
+.tweet-feed header {
+  display: flex;
+  font-size: 14pt;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.tweet-feed header p {
+  margin: 0.5rem;
+}
+
+.tweet-feed footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: 4px solid #545149;
+  height: 25%;
+  font-size: 10pt;
+}
+
+.fa-flag,
+.fa-retweet,
+.fa-heart {
+  color: #4056A1;
+  margin: 0.15rem;
+}
+
+/* #tweet1 .handle{
+  visibility: hidden;
+} */
+
+.tweet-feed article .handle {
+  visibility: hidden;
+}
+
+/* #tweet1:hover .handle {
+  visibility: visible;
+} */
+
+.tweet-feed article:hover .handle {
+  visibility: visible;
+}
