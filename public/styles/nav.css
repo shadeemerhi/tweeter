@@ -1,5 +1,4 @@
 nav {
-  height: 120px;
   width: 100%;
   background-color: #4056A1;
   color: #ffffff;
@@ -26,4 +25,10 @@ nav {
 .fa-angle-double-down {
   color: #ff5c5c;
   margin: 0.2em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
