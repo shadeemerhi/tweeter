@@ -1,5 +1,5 @@
 .form-container {
-  width: 60%;
+  width: 100%;
 }
 
 .form-flex {
@@ -34,6 +34,18 @@ textarea:focus {
   color: #ffffff;
   border: none;
   padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 12px #545149;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .tweet-label {
