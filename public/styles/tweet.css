@@ -8,7 +8,8 @@
   padding: 0.5rem;
   height: 14rem;
   border: 4px solid #545149;
-  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+  /* opacity: 0.8; */
 }
 
 .tweet-content {
@@ -78,9 +79,9 @@
 }
 
 .tweet-container {
-  opacity: 0.95;
+  /* transition: 0.2s ease-in-out; */
 }
 
 .tweet-container:hover{
-  opacity: 1;
+  font-weight: 400;
 }

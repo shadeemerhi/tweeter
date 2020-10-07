@@ -52,12 +52,22 @@ $(document).ready(function() {
     // Form validation --> empty input, or input over 140 characters
     const counterElement = $('#tweet-text').parents('.form-flex').children('div:last').children('.counter');
     const charCount = $('#tweet-text').val().length;
-    console.log(charCount);
+
+
+    // Cross-site scripting - not fully working
+    // const textFromUser = $('#tweet-text').val();
+    // console.log('text from user', textFromUser);
+    // const testThing = $("<div>").text(textFromUser);
+    // console.log('testthing', testThing[0].innerHTML);
+    // $('#tweet-text').innerHTML = testThing[0].innerHTML;
+
 
     if (charCount > 140) {
-      alert('Character limit exceeded! Keep it to 140 please');
+      $('#null-error').hide();
+      $('#char-error').slideDown('fast');
     } else if (charCount === 0) {
-      alert('Your tweet is empty!')
+      $('#char-error').hide();
+      $('#null-error').slideDown('fast');
     } else {
       $.ajax({
         url: '/tweets',
@@ -65,6 +75,8 @@ $(document).ready(function() {
         data: $(this).serialize()
       }).then(() => {
         counterElement[0].innerHTML = '140';
+        $('#char-error').slideUp('fast');
+        $('#null-error').slideUp('fast');
         $('#tweet-text').val('');
         return loadTweets()});
     }
@@ -82,6 +94,9 @@ $(document).ready(function() {
   }
   
   loadTweets();
+  $('#null-error').hide();
+  $('#char-error').hide();
+
 });
 
 

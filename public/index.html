@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/errors.css" type="text/css" />
+
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
@@ -54,6 +56,16 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class="error" id="null-error">
+          <i class="fas fa-exclamation"></i>
+          <p>You tried submitting an empty tweet!</p>
+          <i class="fas fa-exclamation"></i>
+        </div>
+        <div class="error" id="char-error">
+          <i class="fas fa-exclamation"></i>
+          <p>Please keep your tweets to 140 characters!</p>
+          <i class="fas fa-exclamation"></i>
+        </div>
         <h2>Compose Tweet</h2>
         <div class="form-container">
           <form id="submit-tweet">

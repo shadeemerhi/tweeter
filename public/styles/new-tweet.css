@@ -13,6 +13,7 @@
   width: 100%;
   border-bottom: 5px solid #545149;
   font-size: 14pt;
+  font-weight: 300;
   margin-top: 1rem;
   resize: none;
 }
@@ -52,7 +53,3 @@ textarea:focus {
   font-size: 16pt;
   font-weight: 600;
 }
-
-/* output.counter {
-  font-family: 'Bungee', cursive;
-} */

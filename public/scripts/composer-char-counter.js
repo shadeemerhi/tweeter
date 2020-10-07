@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     // If the character count is below 0, the color is changed to red, otherwise it should be it's normal color
     if (charCount < 0) {
-      counterElement.css('color', 'red');
+      counterElement.css('color', '#d24444');
     } else {
       counterElement.css('color', '#545149');
     }
