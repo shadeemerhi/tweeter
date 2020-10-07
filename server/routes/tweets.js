@@ -8,10 +8,12 @@ const tweetsRoutes  = express.Router();
 module.exports = function(DataHelpers) {
 
   tweetsRoutes.get("/", function(req, res) {
+    // console.log('Inside GET request');
     DataHelpers.getTweets((err, tweets) => {
       if (err) {
         res.status(500).json({ error: err.message });
       } else {
+        // console.log(tweets);
         res.json(tweets);
       }
     });
@@ -29,14 +31,15 @@ module.exports = function(DataHelpers) {
       content: {
         text: req.body.text
       },
-      created_at: Date.now()
+      created_at: new Date(Date.now())
     };
 
+    // console.log(tweet);
     DataHelpers.saveTweet(tweet, (err) => {
       if (err) {
         res.status(500).json({ error: err.message });
       } else {
-        res.status(201).send();
+        res.send('Post Request Received');
       }
     });
   });
