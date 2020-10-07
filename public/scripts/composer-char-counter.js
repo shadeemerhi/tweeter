@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $("#tweet-text").keyup(function(event) {
-    // console.log('char count', this.value.length);
 
     // Each time a character is entered, we retrieve the .counter output element from the DOM
     const counterElement = $(this).parents('.form-flex').children('div:last').children('.counter');

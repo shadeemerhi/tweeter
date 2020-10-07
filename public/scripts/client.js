@@ -14,9 +14,9 @@ $(document).ready(function() {
           <header>
             <div class="img-name">
               <img class="profile-pic" src=${tweet.user.avatars}>
-              <p>${tweet.user.name}</p>
+              <span>${tweet.user.name}</span>
             </div>
-            <p class="handle">${tweet.user.handle}</p>
+            <span class="handle">${tweet.user.handle}</span>
           </header>
           <div class="tweet-content">
             <p>${tweet.content.text}</p>
@@ -32,12 +32,12 @@ $(document).ready(function() {
         </div>
       </article>`;
 
-      // console.log($tweet);
       return $tweet;
   }
 
   const renderTweets = function(tweets) {
 
+    $('.tweet-feed').empty();
     tweets.forEach(tweet => {
       const $tweet = createTweetElement(tweet);
       $('.tweet-feed').append($tweet);
@@ -52,21 +52,9 @@ $(document).ready(function() {
       url: '/tweets',
       type: 'POST',
       data: $(this).serialize()
-    });
-
-    // $.ajax({
-    //   url: '/tweets',
-    //   type: 'POST',
-    //   data: $(this).serialize()
-    // }).then(function () {
-    //   return $.ajax({
-    //     url: '/tweets',
-    //     type: 'GET',
-    //     dataType: 'json',
-    //   })
-    // }).then(data => {
-    //   renderTweets(data);
-    // })
+    }).then(() => {
+      $('#tweet-text').val('');
+      return loadTweets()});
   });
 
   const loadTweets = function() {
@@ -80,8 +68,6 @@ $(document).ready(function() {
   }
 
   loadTweets();
-
-
 });
 
 

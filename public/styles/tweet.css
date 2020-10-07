@@ -37,7 +37,7 @@
   height: auto;
 }
 
-.tweet-feed header p {
+.tweet-feed header span {
   margin: 0.5rem;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .tweet-container {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .tweet-container:hover{
