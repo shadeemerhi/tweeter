@@ -31,7 +31,7 @@ module.exports = function(DataHelpers) {
       content: {
         text: req.body.text
       },
-      created_at: new Date(Date.now())
+      created_at: Date.now()
     };
 
     // console.log(tweet);
