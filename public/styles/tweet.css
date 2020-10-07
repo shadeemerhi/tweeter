@@ -78,10 +78,6 @@
   opacity: 1;
 }
 
-.tweet-container {
-  /* transition: 0.2s ease-in-out; */
-}
-
 .tweet-container:hover{
   font-weight: 400;
 }
