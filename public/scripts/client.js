@@ -46,15 +46,28 @@ $(document).ready(function() {
 
   // Creating the POST request using data from the form submit
   $('#submit-tweet').submit(function(event) {
-    
     event.preventDefault();
-    $.ajax({
-      url: '/tweets',
-      type: 'POST',
-      data: $(this).serialize()
-    }).then(() => {
-      $('#tweet-text').val('');
-      return loadTweets()});
+
+
+    // Form validation --> empty input, or input over 140 characters
+    const counterElement = $('#tweet-text').parents('.form-flex').children('div:last').children('.counter');
+    const charCount = $('#tweet-text').val().length;
+    console.log(charCount);
+
+    if (charCount > 140) {
+      alert('Character limit exceeded! Keep it to 140 please');
+    } else if (charCount === 0) {
+      alert('Your tweet is empty!')
+    } else {
+      $.ajax({
+        url: '/tweets',
+        type: 'POST',
+        data: $(this).serialize()
+      }).then(() => {
+        counterElement[0].innerHTML = '140';
+        $('#tweet-text').val('');
+        return loadTweets()});
+    }
   });
 
   const loadTweets = function() {
@@ -63,10 +76,11 @@ $(document).ready(function() {
       type: 'GET',
       dataType: 'json',
     }).then(data => {
+      // Do I need to return line below?
       renderTweets(data);
     });
   }
-
+  
   loadTweets();
 });
 
