@@ -10,10 +10,6 @@ nav {
   margin: 1.5em;
 }
 
-#write-new {
-}
-
-
 .logo {
   font-family: 'Bungee', cursive;
   font-size: 24pt;
@@ -37,7 +33,7 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
   .nav-item {
     margin: 0.6em;
   }
@@ -45,7 +41,7 @@ nav {
   #write-new {
     font-size: 14pt;
   }
-}
+} */
 
 
 /* For all screen sizes below 786px, the nav background matches the header background color  */
