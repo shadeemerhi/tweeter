@@ -84,12 +84,11 @@ $(document).ready(function() {
     });
   };
 
+  // Converts each tweet timestamp into an informative, human-readable statement (e.g. 4 Minutes Ago)
   function timeSince(date) {
 
     let seconds = Math.floor((new Date() - date) / 1000);
-  
     let interval = seconds / 31536000;
-  
     if (interval > 1) {
       return Math.floor(interval) + " years";
     }

@@ -53,8 +53,6 @@ nav {
   }
 }
 
-
-/* For all screen sizes below 786px, the nav background matches the header background color  */
 @media (max-width: 1024px) {
   nav {
     background-color: #d18b00;
