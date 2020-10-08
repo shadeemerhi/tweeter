@@ -22,9 +22,12 @@
 
 @media (min-width: 1024px) {
   .header-container {
+    display: flex;
+    justify-content: center;
     margin-top: 6rem;
     margin-left: 4rem;
     margin-right: 2rem;
     width: 70%;
+    max-width: 600px;
   }
 }

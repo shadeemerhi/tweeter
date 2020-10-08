@@ -1,4 +1,7 @@
 .tweet-feed {
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
   margin-top: 2rem;
   width: 90%;
 }
@@ -10,6 +13,7 @@
   height: 14rem;
   border: 4px solid #545149;
   transition: 0.3s ease-in-out;
+  overflow-wrap: break-word;
   /* opacity: 0.8; */
 }
 
@@ -81,4 +85,10 @@
 
 .tweet-container:hover{
   font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .tweet-feed article {
+    /* max-width: 1000px; */
+  }
 }
