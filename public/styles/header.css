@@ -1,9 +1,8 @@
 #main-header {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 20px;
-  margin-top: 70px;
-
+  /* margin-top: 70px; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -15,4 +14,16 @@
 
 .header-name {
   font-size: 24pt;
+}
+
+.header-container {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
 }

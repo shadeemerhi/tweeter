@@ -39,50 +39,56 @@
         Tweeter
       </div>
       <div class="nav-item new-tweet">
-        <span><b>Write</b> a new tweet</span>
+        <span id="write-new"><b>Write</b> a new tweet</span>
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
-    <header id="main-header">
-      <div class="header-avatar">
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="header-name">
-          <span><b>Shadee </b>Merhi</span>
-      </div>
-  </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div class="error" id="null-error">
-          <i class="fas fa-exclamation"></i>
-          <p>You tried submitting an empty tweet!</p>
-          <i class="fas fa-exclamation"></i>
-        </div>
-        <div class="error" id="char-error">
-          <i class="fas fa-exclamation"></i>
-          <p>We only allow tweets that are 140 characters or less!</p>
-          <i class="fas fa-exclamation"></i>
-        </div>
-        <h2>Compose Tweet</h2>
-        <div class="form-container">
-          <form id="submit-tweet">
-            <div class="form-flex">
-              <div class="text-containter">
-                <label class="tweet-label" for="tweet-text">What are you humming about?</label>
-                <textarea rows="2" name="text" spellcheck="false" id="tweet-text"></textarea>
+    <div class="head-feed">
+      <div class="header-container">
+        <header id="main-header">
+          <div class="header-avatar">
+              <img src="/images/profile-hex.png"> 
+          </div>
+          <br>
+          <div class="header-name">
+              <span><b>Shadee </b>Merhi</span>
+          </div>
+        </header>
+      </div>
+
+      <!-- Page-specific (main) content here -->
+      <main class="main-container">
+        <section class="new-tweet">
+          <div class="error" id="null-error">
+            <i class="fas fa-exclamation"></i>
+            <p>You tried submitting an empty tweet!</p>
+            <i class="fas fa-exclamation"></i>
+          </div>
+          <div class="error" id="char-error">
+            <i class="fas fa-exclamation"></i>
+            <p>We only allow tweets that are 140 characters or less!</p>
+            <i class="fas fa-exclamation"></i>
+          </div>
+          <h2>Compose Tweet</h2>
+          <div class="form-container">
+            <form id="submit-tweet">
+              <div class="form-flex">
+                <div class="text-containter">
+                  <label class="tweet-label" for="tweet-text">What are you humming about?</label>
+                  <textarea rows="2" name="text" spellcheck="false" id="tweet-text"></textarea>
+                </div>
+                <div class="btn-ctr-container">
+                  <button class="btn" type="submit">Tweet</button>
+                  <output name="counter" class="counter" for="tweet-text">140</output>
+                </div>
               </div>
-              <div class="btn-ctr-container">
-                <button class="btn" type="submit">Tweet</button>
-                <output name="counter" class="counter" for="tweet-text">140</output>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      <section class="tweet-feed"></section>
-    </main>
+            </form>
+          </div>
+        </section>
+        <section class="tweet-feed"></section>
+      </main>
+    </div>
+    
   </body>
 </html>

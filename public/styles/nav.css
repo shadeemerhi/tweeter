@@ -10,6 +10,10 @@ nav {
   margin: 1.5em;
 }
 
+#write-new {
+}
+
+
 .logo {
   font-family: 'Bungee', cursive;
   font-size: 24pt;
@@ -31,4 +35,23 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+@media (max-width: 520px) {
+  .nav-item {
+    margin: 0.6em;
+  }
+
+  #write-new {
+    font-size: 14pt;
+  }
+}
+
+
+/* For all screen sizes below 786px, the nav background matches the header background color  */
+@media (max-width: 1024px) {
+  nav {
+    background-color: #d18b00;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  }
 }
