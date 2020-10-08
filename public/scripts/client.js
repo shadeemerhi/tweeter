@@ -15,7 +15,7 @@ $(document).ready(function() {
           <p>${escape(tweet.content.text)}</p>
         </div>
         <footer>
-          <p>${tweet['created_at']}</p>
+          <p>${timeSince(tweet['created_at'])} ago</p>
           <div class="eng-icons">
             <i class="fas fa-flag"></i>
             <i class="fas fa-retweet"></i>
@@ -83,6 +83,34 @@ $(document).ready(function() {
       renderTweets(data);
     });
   };
+
+  function timeSince(date) {
+
+    let seconds = Math.floor((new Date() - date) / 1000);
+  
+    let interval = seconds / 31536000;
+  
+    if (interval > 1) {
+      return Math.floor(interval) + " years";
+    }
+    interval = seconds / 2592000;
+    if (interval > 1) {
+      return Math.floor(interval) + " months";
+    }
+    interval = seconds / 86400;
+    if (interval > 1) {
+      return Math.floor(interval) + " days";
+    }
+    interval = seconds / 3600;
+    if (interval > 1) {
+      return Math.floor(interval) + " hours";
+    }
+    interval = seconds / 60;
+    if (interval > 1) {
+      return Math.floor(interval) + " minutes";
+    }
+    return Math.floor(seconds) + " seconds";
+  }
 
   // Hiding the error messages on page load - will be shown as needed on form submission (see above)
   $('#null-error').hide();
