@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   width: 75%;
   color: rgb(201, 68, 68);
   border: 2px solid rgb(201, 68, 68);

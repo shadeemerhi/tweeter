@@ -7,6 +7,9 @@
 }
 
 .tweet-feed article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
   padding: 0.5rem;
@@ -15,6 +18,10 @@
   transition: 0.3s ease-in-out;
   overflow-wrap: break-word;
   /* opacity: 0.8; */
+}
+
+.tweet-feed article p {
+  margin: 0;
 }
 
 .tweet-content {
