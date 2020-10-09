@@ -12,6 +12,24 @@
   cursor: pointer;
 }
 
+.fa-circle {
+  color: #ff5c5c;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.fa-circle:active {
+  transform: translateY(4px);;
+}
+
+.fa-angle-double-up {
+  position: fixed;
+  bottom: 50px;
+  right: 52px;
+  color: white;
+}
+
+
 .hidden {
   visibility: hidden;
 }
