@@ -63,7 +63,7 @@ $(document).ready(function() {
         type: 'POST',
         data: $(this).serialize()
       }).then(() => {
-        // Resets the character counter on the page back to 140, and hides any errors that may be visible
+        // Resets the character counter on the page back to 140, and hides any errors that may be visible, and slides the Compose Tweet section up
         counterElement[0].innerHTML = '140';
         $('#null-error').slideUp('fast');
         $('#char-error').slideUp('fast');
