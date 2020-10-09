@@ -24,8 +24,10 @@ $(document).ready(function() {
     $(document).scroll(function () {
       const $nav = $(".sticky");
       const $tweetButton = $('.new-tweet');
+      const $logo = $('.logo');
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $tweetButton.toggleClass('hidden', $(this).scrollTop() > $nav.height());
+      $logo.toggleClass('color-toggle', $(this).scrollTop() > $nav.height());
     });
   });
 

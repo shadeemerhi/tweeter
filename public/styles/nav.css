@@ -16,6 +16,9 @@ nav {
   cursor: pointer;
 }
 
+.color-toggle {
+  color: #4056A1;
+}
 
 
 .scrolled {
