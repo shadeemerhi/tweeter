@@ -12,7 +12,7 @@ This app uses HTML, CSS, JavaScript, jQuery, and AJAX on the front-end, and Node
 !["Responsive mobile feed"](https://github.com/shadeemerhi/tweeter/blob/master/docs/responsive-1.png)
 !["Responsive mobile feed 2"](https://github.com/shadeemerhi/tweeter/blob/master/docs/responsive-2.png)
 !["Responsive mobile feed with 'empty tweet' error"](https://github.com/shadeemerhi/tweeter/blob/master/docs/responsive-error.png)
-!["Scroll-to-top button"](https://github.com/shadeemerhi/tweeter/blob/master/docs/scroll-top-button.png)
+!["Scroll-to-top button"](https://github.com/shadeemerhi/tweeter/blob/master/docs/scroll-up-btn.png)
 
 
 ## Dependencies
