@@ -67,6 +67,7 @@ $(document).ready(function() {
         counterElement[0].innerHTML = '140';
         $('#null-error').slideUp('fast');
         $('#char-error').slideUp('fast');
+        $('#compose').slideUp('slow');
         $('#tweet-text').val('');
         return loadTweets();
       }).catch(error => {

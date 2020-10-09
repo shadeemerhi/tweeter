@@ -5,6 +5,15 @@
   align-items: center;
 }
 
+.new-tweet {
+  cursor: pointer;
+}
+
+#compose {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
 .form-container {
   width: 100%;
 }
