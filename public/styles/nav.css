@@ -16,6 +16,18 @@ nav {
   cursor: pointer;
 }
 
+
+
+.scrolled {
+  /* background-color: #fff !important; */
+  background-color: rgba(1, 1, 1, 0);
+  background-image: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .new-tweet {
   display: flex;
   flex-direction: column;
