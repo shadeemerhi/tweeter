@@ -34,7 +34,6 @@ $(document).ready(function() {
 
   // Scroll-to-top button appears when user scrolls down - when clickes, scrolls to top and opens tweet composer
   $('.scroll-button').click(function() {
-    // $(this).toggleClass('hidden');
     $('html,body').animate({ scrollTop: $('.head-feed').offset().top - 150 }, 500);
     if ($('#compose').is(':hidden')) {
       $('#compose').slideDown('slow');
