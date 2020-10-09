@@ -1,9 +1,7 @@
 .scroll-button {
   display: flex;
   justify-content: flex-end;
-  /* width: 55%; */
   position: fixed;
-  /* float: bottom; */
   bottom: 20px;
   right: 20px;
 }
