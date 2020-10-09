@@ -69,6 +69,8 @@ $(document).ready(function() {
         $('#char-error').slideUp('fast');
         $('#tweet-text').val('');
         return loadTweets();
+      }).catch(error => {
+        console.log('error', error);
       });
     }
   });
@@ -81,6 +83,8 @@ $(document).ready(function() {
       dataType: 'json',
     }).then(data => {
       renderTweets(data);
+    }).catch(error => {
+      console.log('error', error);
     });
   };
 
