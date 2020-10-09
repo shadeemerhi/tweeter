@@ -1,9 +1,11 @@
 .scroll-button {
   display: flex;
   justify-content: flex-end;
-  width: 55%;
+  /* width: 55%; */
   position: fixed;
-  float: bottom;
+  /* float: bottom; */
+  bottom: 20px;
+  right: 20px;
 }
 
 .fa-arrow-circle-up {
