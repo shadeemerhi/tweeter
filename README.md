@@ -22,8 +22,6 @@ This app uses HTML, CSS, JavaScript, jQuery, and AJAX on the front-end, and Node
 !["Character limit exceeded error (mobile design)"](https://github.com/shadeemerhi/tweeter/blob/master/docs/responsive-error.png)
 
 
-
-
 ## Dependencies
 
 - Express
